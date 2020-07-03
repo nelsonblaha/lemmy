@@ -70,11 +70,6 @@
     "node": ">=8.9.0"
   },
   "engineStrict": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "cargo clippy --manifest-path ../server/Cargo.toml --all-targets --all-features -- -D warnings && lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,tsx,js}": [
       "prettier --write",
